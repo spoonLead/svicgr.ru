@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom: solid 5px #fbb03b;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: solid 5px #0071bc;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 25px;
+}
+.stage {
+    padding-top: 20px;
+    background: #cde3f2;
+    background: -moz-linear-gradient(top, #cde3f2 1%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #cde3f2 1%,#ffffff 100%);
+    background: linear-gradient(to bottom, #cde3f2 1%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cde3f2', endColorstr='#ffffff',GradientType=0 );
+    padding-bottom: 50px;
+}
+
+.header {
+    height: 125px;
+}
+
+.znak {
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    height: 125px;
+    width: 100px;
+    display: inline-block;
+    float: left;
+}
+.name {
+    display: inline-block;
+}
+.name__text {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+}
+.contacts-head {
+    text-align: right;
+   height: 125px;
+}
+
+.contacts-head__content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    right: 15px;
+}
+.phone {
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.adress, .email {
+    font-size: 16px;
+}
+.menu {
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+.menu__item {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menu__item:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 1px #fbb03b;
+}
+
+.menu-contact {
+    text-align: right;
+}
+
+.menu-contact .menu__item {
+    margin-right: 0;
+
+}
+.menu__item_footer {
+    color: black;
+}
+.menu__item_footer:hover {
+    color: black;
+}
+
+.menu_footer .row {
+    padding-bottom: 20px;
+    border-bottom: 4px solid #fbb03b;
+    margin-bottom: 30px;
+}
+
+.menu_footer {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin-top: 70px;
+}
+.hero {
+    height: 474px;
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.teaser__image {
+    -webkit-box-shadow: 0px 25px 62px -30px rgba(0,113,188,1);
+    -moz-box-shadow: 0px 25px 62px -30px rgba(0,113,188,1);
+    box-shadow: 0px 25px 62px -30px rgba(0,113,188,1);
+}
+
+.citata {
+    display: block;
+    height: 550px;
+    position: relative;
+    background: rgba(0,40,173,1);
+    background: -moz-linear-gradient(left, rgba(0,40,173,1) 0%, rgba(0,113,188,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,40,173,1)), color-stop(100%, rgba(0,113,188,1)));
+    background: -webkit-linear-gradient(left, rgba(0,40,173,1) 0%, rgba(0,113,188,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,40,173,1) 0%, rgba(0,113,188,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,40,173,1) 0%, rgba(0,113,188,1) 100%);
+    background: linear-gradient(to right, rgba(0,40,173,1) 0%, rgba(0,113,188,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028ad', endColorstr='#0071bc', GradientType=1 );
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 90%, 0 100%);
+    color: white;
+
+}
+
+.citata__text {
+
+    width: 70%;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
