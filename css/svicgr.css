@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic');
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'PT Sans', sans-serif;
     color: black;
 }
@@ -81,7 +83,7 @@ h3 {
 }
 
 
-
+/*Fix рамки по краям изображения teaser-image*/
 @media screen and (min-width: 990px){
     .teaser__image {
         -webkit-box-shadow: 0px 25px 62px -30px rgba(0,113,188,1);
@@ -98,6 +100,85 @@ h3 {
     }
 }
 
+/*Скрытие информации о номере телефона компании в хедере и футере*/
+@media screen and (max-width: 600px) {
+    .contacts-head{
+        visibility: hidden;
+    }
+}
+
+
+/*Версия для компьютеров*/
+@media screen and (min-width: 1001px) {
+    .menu {
+        margin: 0;
+        padding: 0;
+
+        background-color: #333333;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .menu-main{
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-main ul,
+    .menu-main ol{
+        list-style: none;
+    }
+
+    .menu-main > ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .menu-main > ul li a{
+        display: block;
+    }
+
+
+    .menu__item {
+        color: white;
+        font-weight: bold;
+        margin-right: 20px; 
+        border: 1px solid transparent;
+    }
+
+    .menu__item:hover {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: solid 1px #fbb03b;
+    }
+
+    #menu-contact { 
+        position: absolute;
+        right: 0px;
+    }
+
+    .menu_footer {
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        margin-top: 70px;
+    } 
+
+    .menu__item_footer {
+        color: black;
+        border: 1px solid transparent;
+        border-bottom: solid 1px #fbb03b;
+    }
+    .menu__item_footer:hover {
+        color: black;
+    }
+}
+
+/*Версия для планшетов*/
 @media screen and (max-width: 1000px) {
     html{
         -webkit-text-size-adjust: none;
@@ -183,12 +264,7 @@ h3 {
 
 }
 
-@media screen and (max-width: 600px) {
-    .contacts-head{
-        visibility: hidden;
-    }
-}
-
+/*Версия для широких экранов мобильных телефонов*/
 @media screen and (max-width: 450px) {
     html{
         -webkit-text-size-adjust: none;
@@ -265,12 +341,6 @@ h3 {
         color: black;
     }
     
-    /* .menu_footer .row {
-        padding-bottom: 20px;
-        border-bottom: 4px solid #fbb03b;
-        margin-bottom: 30px;
-    }
- */
     .menu_footer {
         background-color: white;
         padding-top: 10px;
@@ -280,11 +350,74 @@ h3 {
     } 
 }
 
+/*Версия для узких экранов мобильных телефонов*/
 @media screen and (max-width: 360px) {
-    .menu{
-        font-size: 11px;
+    html{
+        -webkit-text-size-adjust: none;
     }
+    h2{
+        font-size: 35px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .contacts-head{
+        visibility: hidden
+    }
+
+    .menu{
+        font-size: 10px;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+
+        height: 130px;
+        background-color: #333333;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .menu-main ul,
+    .menu-main ol{
+        list-style: none;
+    }
+
+    .menu-main > ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-main > ul li{
+        display: block;
+        flex-basis: 50%;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    .menu__item_footer {
+        color: black;
+    }
+    .menu__item_footer:hover {
+        color: black;
+    }
+    
+    .menu_footer {
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        margin-top: 70px;
+    } 
 }
+
+
 
 .hero {
     height: 474px;
